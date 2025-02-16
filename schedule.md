@@ -1,4 +1,4 @@
-### Part 1
+### Day1 - HTML - Part 1
 **Introduction to Web Technology**
 * Overview of Web Technology
 * Role of HTML in Web Development
@@ -22,8 +22,8 @@
 * Table Structure
 * Table Rows and Columns
 * Table Attributes
-* 
-### Part 2
+  
+### Day2 - HTML Part 2
 **HTML Links, Lists, Forms**
 * Creating Hyperlinks in HTML
 * Anchor Tags
