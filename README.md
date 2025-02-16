@@ -2,9 +2,9 @@
 fullstack - feb 2025
 
 ## Docs
-## Html
+### Html
 https://html.com/   
 https://developer.mozilla.org/en-US/docs/Web/HTML   
 https://www.w3schools.com/html/   
-## Playground
+### Playground
 https://developer.mozilla.org/en-US/play
