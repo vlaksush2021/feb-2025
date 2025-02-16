@@ -13,6 +13,12 @@
 * Lists
 * etc.
 * HTML Attributes and their Usage
+
+**Lists in details**
+* Working with Lists
+* Ordered Lists
+* Unordered Lists
+* Nested Lists
   
 **HTML Images and Tables**
 * Embedding Images in HTML
@@ -25,15 +31,12 @@
 * Table Attributes
   
 ### Part 2
-**HTML Links, Lists, Forms**
+**HTML Links, Forms**
 * Creating Hyperlinks in HTML
 * Anchor Tags
 * Linking to External Resources
 * Internal Page Links
-* Working with Lists
-* Ordered Lists
-* Unordered Lists
-* Nested Lists
+
 * HTML Forms
 * Form Elements
 * Input Types
