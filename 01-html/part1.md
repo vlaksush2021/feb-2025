@@ -132,7 +132,7 @@ A list is a **collection of items grouped together in a structured format**. Lis
 
 ```
 
-## Lab
+### Lab
 1. [Define a list](https://github.com/vlaksush2021/feb-2025/blob/main/labs/list.md)
 
 
@@ -240,3 +240,6 @@ Table attributes like border, cellpadding, and cellspacing style the table. They
     </table>
 
 ```
+### Lab
+1. [Define a table](https://github.com/vlaksush2021/feb-2025/blob/main/labs/table.md)
+
