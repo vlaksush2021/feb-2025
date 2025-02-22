@@ -87,3 +87,27 @@ h1 {
 }
 
 ```
+
+
+
+# Selectors and Styling
+
+## Basic Selectors
+### Element Selectors / Type Selectors
+#### Demo
+```css
+p{
+    color:blue;
+}
+```
+
+### Class Selector
+. (dot)
+
+
+### ID Selector
+# (hash)
+
+
+### Universal Selector
+* (star)
