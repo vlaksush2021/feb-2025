@@ -90,10 +90,18 @@ h1 {
 
 
 
-# Selectors and Styling
+<hr />
+## Selectors and Styling
+Selectors in CSS are like "pointers" that tell the browser which HTML elements to apply styles to. We use different types of selectors to target elements in various ways.
 
 ## Basic Selectors
-### Element Selectors / Type Selectors
+
+
+### Element Selector
+The element selector targets all elements of a specific type, like all `<p>`, `<h1>`, or `<div>` tags.
+
+Note: This applies styles to all instances of the specified HTML tag.
+
 #### Demo
 ```css
 p{
@@ -101,13 +109,54 @@ p{
 }
 ```
 
+
 ### Class Selector
-. (dot)
+The class selector targets elements that have a specific class attribute. Classes can be reused across multiple elements.
+
+Note: To target a class, we use a period (.) followed by the class name.
+
+#### Demo
+```css
+.highlight {
+  background-color: yellow;
+}
+/* This will give all elements with the class "highlight" a yellow background. */
+```
 
 
 ### ID Selector
-# (hash)
+The ID selector targets a specific element with a unique id attribute. IDs should be unique within a page.
 
+Note: To target an ID, we use a hash (#) followed by the ID name.
 
-### Universal Selector
-* (star)
+#### Demo
+```css
+#main-heading {
+  color: green;
+}
+/* This will make the element with the ID "main-heading" green. */
+```
+
+### CSS Priority (Specificity)
+When multiple styles are applied to the same element, CSS uses specificity to determine which rule takes priority. Specificity is like the "weight" of a rule—the higher the specificity, the more likely it will be applied.
+
+```bash
+    Inline styles (inside the style attribute of an element) have the `highest` priority.  
+
+    ID selectors have a higher specificity than class or element selectors`.
+
+    Class selectors have lower specificity than IDs but higher than element selectors.
+
+    Element selectors have the lowest specificity and are overridden by classes, IDs, and inline styles.
+
+```
+**Note:**
+
+Important!
+You can use `!important` to force a style to override others. However, this should be used sparingly as it bypasses the natural flow of CSS specificity.
+```css
+p {
+  color: black !important;
+}
+
+```
