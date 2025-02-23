@@ -42,3 +42,41 @@
 * Input Types
 * Form Attribu
  <hr />
+
+ ## CSS
+ ### Part 1
+**CSS Styling Approaches**
+
+* Inline
+* Internal
+* External
+
+**Selectors and Styling**
+
+* Basic Selectors
+* Element Selector
+* Class Selector
+* ID Selector
+
+ ### Part 2
+**Typography, Colors, and Background Properties**
+
+* Font Properties
+* Text Properties
+* Color Properties
+* Background Properties
+
+
+**Box Model and Positioning**
+
+* Understanding the Box Model
+* Content
+* Padding
+* Border
+* Margin
+* Box Sizing Property
+* Position Property
+* Static Positioning
+* Relative Positioning
+* Absolute Positioning
+* z-index Property
