@@ -94,6 +94,8 @@ h1 {
 ## Selectors and Styling
 Selectors in CSS are like "pointers" that tell the browser which HTML elements to apply styles to. We use different types of selectors to target elements in various ways.
 
+
+# Selectors
 ## Basic Selectors
 
 
@@ -160,3 +162,65 @@ p {
 }
 
 ```
+
+
+## Advanced Selectors
+
+### Grouping Selector
+div,p
+
+### Descendant Selector
+
+div p
+
+### Child Selector
+div>p
+
+### Adjacent Sibling Selector
+div+p
+
+### General Sibling Selector
+div~p
+
+
+# CSS Properties - I
+
+## Font and Text Properties
+```css
+            .p1{
+                /* font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-weight:600;
+                font-style: italic; */
+
+                font:bolder italic 24px 'Mono Type Corsiva','Arial'
+            }
+            .p2{
+                text-align: left;
+                text-transform:lowercase;
+                letter-spacing: 2;
+                line-height: 1;
+                text-indent: 15;
+               
+                text-decoration:dotted;
+                text-decoration-line:underline ;
+            
+            }
+```
+
+
+## Color Properties
+
+## Backgroud Proprtes
+
+
+
+# Box Model
+Content
+padding
+border
+margin
+
+# Shadow
+text
+box

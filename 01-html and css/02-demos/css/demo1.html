@@ -8,219 +8,39 @@
 
     
     <style>
-        .fav1{
-            color:blueviolet;
-        }
-
-        #fav2{
-            color:aquamarine;
-        }
-
-        *{
-            color:green;
-        }
-
        
 
+        div~p{
+            color:red
+        }
     </style>
 </head>
 
 <body bgcolor="yellow">
+<div>
+    <span>
+        <p>this is another para</p>
+        <b>bold</b>
+    </span>
+    <p>This is first para
 
+        <p>this is inner para</p>
+    </p>
+    <h2>First H2</h2>
+  
+    <h2>Second  H2</h2>
+    <p>This is second para</p>
 
-    <h1>
-        <marquee direction="right" behavior="slide" scrollamount="5">
-            ABC Technologies
-        </marquee>
-    </h1>
+</div>
+<p>this is out of box para
+    <p>this is another para ---</p>
+</p>
 
-    <div align="right">
-        | <a href="#course">Course Offered</a> | <a href="#frontend">Frontend</a> |
-    </div>
+<div>
+    <p>This is third para</p>
 
-    <hr color="red" />
-    <font color="blue" face="Monotype corsiva" size="4">
-        <div align="right">
-            21/1 , <b>Anna Street</b>,<br />
-            <u>Chennai -600017</u>,<br />
-            <i>Tamilnadu</i>.<br />
-        </div>
-    </font>
-    <hr />
-    <h2  class="fav1" >Course Offered</h2>
-    <p class="fav1">This is used to know list of courses we offered</p>
-    <ol type="1" start="1">
-        <li id="fav2">Frontend</li>
-        <ul type="circle">
-            <!-- <li><a href="https://www.google.com" target="_blank">HTML</a></li> -->
-            <li><a href="html.html" target="_blank">HTML</a></li>
+</div>
 
-            <li><a href="css.html" target="_blank">CSS</a></li>
-            <li><a href="javascript.html" target="_blank">Javascript</a></li>
-        </ul>
-        <li>Backend</li>
-        <dl>
-            <dt>Spring Boot</dt>
-            <dd>This is Java Based</dd>
-
-            <dt>Node.js</dt>
-            <dd>This is Javascript based </dd>
-        </dl>
-        <li>Database</li>
-        <ol>
-            <li>Oracle</li>
-            <li>MySQL</li>
-        </ol>
-    </ol>
-    <hr />
-    <h2 id="frontend" class="fav1">Frontend</h2>
-    <table border="1" width="60%" bgcolor="cyan" cellpadding="5px" cellspacing="15">
-        <thead>
-            <tr>
-                <th colspan="4" align="right">Feb 2025 Batch</th>
-            </tr>
-            <tr>
-                <th>Module</th>
-                <th>Topics</th>
-                <th>Trainer</th>
-                <th>Duration</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>
-                    List Elements <br />
-                    Table Elements <br />
-                    Form Elements <br />
-                </td>
-                <td align="center" rowspan="2">Ram</td>
-                <td>4 days</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>
-                    Types of Styles <br />
-                    Types of Selectors <br />
-                </td>
-                <td>3 days</td>
-            </tr>
-            <tr>
-                <td>Javascript</td>
-                <td>
-                    Functions <br />
-                    Control Statements <br />
-                    Validation <br />
-                </td>
-                <td align="center">Krishna</td>
-                <td>5 days</td>
-            </tr>
-        </tbody>
-        <tr>
-        </tr>
-    </table>
-    <hr>
-    <h2>Image with Links</h2>
-
-    <h2>Table</h2>
-    <hr />
-
-    <form action="html.html" method="get">
-        <fieldset>
-            <legend align="right">Registration</legend>
-            <table border="0" width="70%">
-                <tr>
-                    <td>Enter Name</td>
-                    <td><input type="text" placeholder="enter name" size="30" /></td>
-                </tr>
-
-                <tr>
-                    <td>User Name </td>
-                    <td><input type="text" required /> <span style="color:red">*</span> </td>
-                </tr>
-
-                <tr>
-                    <td>Password</td>
-                    <td><input type="password" /></td>
-                </tr>
-
-                <tr>
-                    <td>Confirm Password</td>
-                    <td><input type="password" /></td>
-                </tr>
-
-                <tr>
-                    <td>Gender</td>
-                    <td>
-                        <input type="radio" name="gender">Male
-                        <input type="radio" checked name="gender">Female
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Language Known</td>
-                    <td>
-                        <input type="checkbox">Tamil
-                        <input type="checkbox" checked>English
-                        <input type="checkbox">Telugu
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Skills</td>
-                    <td>
-                        <select>
-                            <optgroup label="Frontend">
-                                <option>Html</option>
-                                <option>CSS</option>
-                                <option>Javascript</option>
-                            </optgroup>
-
-                            <option selected>Backend</option>
-                            <option>Database</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>DOJ</td>
-                    <td><input type="date"></td>
-                </tr>
-
-                
-                <tr>
-                    <td>Email</td>
-                    <td><input type="email" /></td>
-                </tr>
-
-                <tr>
-                    <td>Upload your resume</td>
-                    <td><input type="file" /> </td>
-                </tr>
-
-                <tr>
-                    <td>Fav color</td>
-                    <td><input type="color"></td>
-                </tr>
-
-                <tr>
-                    <td>few lines about you</td>
-                    <td>
-                        <textarea rows="5" cols="45"></textarea>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" align="right">
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-
-    </form>
 
 </body>
 
