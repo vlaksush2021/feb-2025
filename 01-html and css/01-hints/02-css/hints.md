@@ -91,6 +91,7 @@ h1 {
 
 
 <hr />
+
 ## Selectors and Styling
 Selectors in CSS are like "pointers" that tell the browser which HTML elements to apply styles to. We use different types of selectors to target elements in various ways.
 
