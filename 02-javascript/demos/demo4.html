@@ -1,0 +1,104 @@
+<!-- control statements -->
+<html>
+<head>
+    <style>
+        #result{
+            margin-left: 100px ; /* margin-left , marginLeft */
+            margin-top: 30px;
+            border: 2px solid red;
+            width:400px;
+        }
+    </style>
+</head>
+<body onload="load()">
+
+    <h3>Simple Calculator</h3>
+
+    <table border="0" width="60%" align="center">
+        <tr>
+            <td>Number 1</td>
+            <td><input type="text" id="t1"></td>
+        </tr>
+
+        <tr>
+            <td>Number 2</td>
+            <td><input type="text" id="t2"></td>
+        </tr>
+
+        <tr>
+            <td>Choose Option</td>
+            <td>
+                <select id="operation">
+                    <option>Addition</option>
+                    <option>Subtraction</option>
+                    <option>Multiplication</option>
+                    <option>Divition</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Result</td>
+            <td><input type="text" id="t3" disabled></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="performOperation()">Submit</button></td>
+        </tr>
+
+    </table>
+
+    <div id="result">
+        loading...
+    </div>
+
+    <script>
+        function performOperation() {
+            var a = parseInt(document.getElementById("t1").value);
+            var b = parseInt(document.getElementById("t2").value);
+            var c = 0;
+            var operation = document.getElementById("operation").value
+            var message;
+
+            if (isNaN(a) || isNaN(b)) {
+                // alert("Invalid number entered...")
+                message = "Invalid number entered..";
+                document.getElementById("result").style.color='red';
+                document.getElementById("result").innerHTML = message
+            }
+
+            else {
+                
+                switch (operation) {
+                    case "Addition":
+                        c = a + b;
+                        break;
+
+                    case "Subtraction":
+                        c = a - b;
+                        break;
+
+                    case "Multiplication":
+                        c = a * b;
+                        break;
+
+                    case "Divition":
+                        c = a / b;
+                        break;
+                }
+                document.getElementById("t3").value = c;
+                document.getElementById("result").style.color='blue';
+                document.getElementById("result").innerHTML = c;
+            }
+
+          
+        }
+
+
+        function load() {
+            document.getElementById("t1").focus();
+        }
+    </script>
+</body>
+
+</html>

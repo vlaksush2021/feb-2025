@@ -129,3 +129,21 @@ Document Object: The document object represents the entire HTML document and all
 </html>
 
 ```
+
+
+## Dynamic Typing 
+
+
+## Control Statements
+conditional control statement
+    decision making 
+        if, if else , if else if else if .... , if if else  else 
+        switch
+    looping / iteration
+        for
+        while
+        do while
+
+
+
+unconditional control statement
