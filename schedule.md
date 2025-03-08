@@ -80,3 +80,42 @@
 * Relative Positioning
 * Absolute Positioning
 * z-index Property
+
+<hr />
+
+## Week 3
+### Part 1
+
+**JavaScript Basics:**
+
+* Overview of JavaScript
+* Role of JavaScript in Web Development
+* Basics of JavaScript Syntax
+* Setting up JavaScript in a Web Page
+
+**Control Statements:**
+
+* Conditional Statements (if, else, switch)
+* Looping Statements (for, while)
+* Control Flow in JavaScript
+
+### Part 2
+
+**Primary Data Types and Objects in JavaScript:**
+
+* Numbers, Strings, Booleans
+* Undefined and Null
+* Type Coercion and Conversion
+
+* Introduction to Objects
+* Date Object
+* Math Object
+* Working with Arrays
+* Array Methods
+* Iterating through Arrays
+
+**Functions and Events:**
+
+* Declaring and Invoking Functions
+* Function Parameters and Return Values
+* Introduction to Events in JavaScript
