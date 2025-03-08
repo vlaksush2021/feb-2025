@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Javascript Demos</title>
+</head>
+
+<body>
+
+    <h1>Welcome to My Website</h1>
+    <p id="p1">loading...</p>
+
+    <button onclick="displayMessage()">Click Me</button>
+
+    <script>
+
+        // console.log("testing")
+        // alert("hello ")
+        // document.write("learning js ")
+
+        function displayMessage(){
+        var p1 =  document.getElementById("p1").innerText;
+        console.log(p1);
+        document.getElementById("p1").innerHTML = "Welcome to <b>JS</b>"
+            
+
+        }
+
+
+    </script>
+</body>
+
+</html>
