@@ -1,0 +1,30 @@
+<!-- Date Object -->
+ <script>
+    console.log('working')
+    let today = new Date();
+    console.log(today);
+    console.log(today.getDate())
+    console.log(today.getMonth()) // 0(jan) ... to 11 (dec)
+    console.log(today.getFullYear())
+    console.log(today.getDay()) // 0 to 6 (o - sun, 1 - mon ... )
+    console.log(today.toLocaleDateString())
+
+    console.log(today.getDate() +"-" + displayMonth(today.getMonth()) +"-"+today.getFullYear())
+
+
+
+    console.log(today.getHours()+":"+today.getMinutes()+":"+today.getSeconds())
+
+    var doj = new Date("02/01/2025")
+    console.log(typeof doj)
+    console.log(doj.getDate()+"-"+ displayMonth(doj.getMonth())+"-"+doj.getFullYear())
+
+
+
+    function displayMonth(month){
+        let months=["Jan","Feb","Mar","Apr"];
+        return months[month];
+    }
+
+
+ </script>

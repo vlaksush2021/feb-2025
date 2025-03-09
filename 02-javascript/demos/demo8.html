@@ -1,0 +1,108 @@
+<!-- Array Demo -->
+<html>
+
+<body>
+
+    <h2>Available Courses</h2>
+    <ul id="courseList">
+        <li>Frontend</li>
+        <li>backend</li>
+        <li>fullstack</li>
+    </ul>
+
+    <h2>Add New Course</h2>
+    <input type="text" id="courseName" placeholder="Course Name">
+    <button onclick="addCourse()">Add Course</button>
+
+    <h2>Remove Course</h2>
+    <button onclick="removeCourse()">Remove Course</button>
+
+
+    <script>
+        let courses = ["Frontend", "Backend", "Fullstack"];
+
+        function displayCourses() {
+
+            if (courses.length == 0) {
+                let courseList = document.getElementById("courseList");
+                courseList.innerHTML = ""
+                let li = document.createElement('li');
+                li.textContent = "No Courses available"
+                courseList.appendChild(li)
+            }
+            else {
+                let courseList = document.getElementById("courseList");
+                courseList.innerHTML = ""
+
+                for (let i = 0; i < courses.length; i++) {
+                    let li = document.createElement('li');
+                    li.textContent = courses[i]
+                    courseList.appendChild(li)
+                }
+            }
+
+        }
+
+        function addCourse() {
+            let courseName = document.getElementById('courseName').value;
+            if (courseName) {
+
+                for(let i=0;i<courses.length;i++){
+                    if(courseName.toLowerCase() == courses[i].toLowerCase()){
+                        alert("Entry is already available")
+                        resetCourseName();
+                        return;
+                    }
+                }
+                
+                courses.push(courseName);
+
+                displayCourses();
+                resetCourseName()
+            }
+            else {
+                alert('Enter value for course')
+                document.getElementById('courseName').focus();
+            }
+        }
+
+        function removeCourse() {
+            courses.pop();
+            displayCourses();
+        }
+
+        function resetCourseName(){
+            document.getElementById("courseName").value = "";
+        }
+
+
+
+        //initial page
+        displayCourses();
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+push() - Adds an element to the end of the array.
+pop() - Removes the last element from the array.
+shift() - Removes the first element from the array.
+unshift() - Adds an element to the beginning of the array.
+-->
+
+<!-- 
+
+Note:
+Arrays in JavaScript are indeed a special type of object.
+
+Arrays are actually a specialized kind of object in JavaScript. 
+While objects store data in key-value pairs, arrays store data in an ordered list with indexed keys.
+
+Objects allow us to group related data and functions together, such as all the properties of a course (title, instructor, duration), 
+making them essential for more complex data handling.
+
+Remember, arrays are objects, but they're a more specific kind that uses numbers (indexes) as their keys. 
+In contrast, regular objects use names as their keys, making them useful for modeling more complex structures like students, instructors, or entire course systems.
+-->
