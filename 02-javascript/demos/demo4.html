@@ -12,7 +12,7 @@
 </head>
 <body onload="load()">
 
-    <h3>Simple Calculator</h3>
+    <h3 style="margin-left: 100px;">Simple Calculator</h3>
 
     <table border="0" width="60%" align="center">
         <tr>
@@ -34,6 +34,24 @@
                     <option>Multiplication</option>
                     <option>Divition</option>
                 </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Add Format</td>
+            <td>
+                <input type="checkbox" id="bold" /> Bold
+                <input type="checkbox" id="italic" /> Italic
+            </td>
+        </tr>
+
+        <tr>
+            <td>Add Color</td>
+            <td>
+                <input type="radio" value="red" name="color" /> Red
+                <input type="radio" value="green" name="color" /> Green
+                <input type="radio" value="blue" name="color" /> Blue
             </td>
         </tr>
 
@@ -59,6 +77,14 @@
             var c = 0;
             var operation = document.getElementById("operation").value
             var message;
+
+            var bold = document.getElementById("bold").checked;
+            var italic = document.getElementById('italic').checked;
+
+            var selectedColor = document.getElementsByName('color');
+            
+
+            var result = document.getElementById('result');
 
             if (isNaN(a) || isNaN(b)) {
                 // alert("Invalid number entered...")
@@ -87,8 +113,21 @@
                         break;
                 }
                 document.getElementById("t3").value = c;
-                document.getElementById("result").style.color='blue';
-                document.getElementById("result").innerHTML = c;
+
+                result.style.fontWeight = bold ? "bold" : "normal";
+                result.style.fontStyle = italic ? "italic" : "normal"
+                
+                for(let i=0;i<selectedColor.length;i++) {
+                    console.log(selectedColor[i].value, selectedColor[i].checked)
+                    if(selectedColor[i].checked){
+                        result.style.color = selectedColor[i].value
+                        break;
+                    }
+                    
+                }
+
+                //document.getElementById("result").style.color='blue';
+                result.innerHTML = c;
             }
 
           
