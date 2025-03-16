@@ -1,0 +1,34 @@
+<html>
+    <body>
+
+        <h1>welcome to abc</h1>
+        <h2>function demo</h2>
+        <button id="greetButton">Click Me!</button>
+        <p id="greeting">
+
+        </p>
+        
+        <script>
+
+            function displayGreeting() {
+                const greetingElement = document.getElementById("greeting");
+                greetingElement.textContent = 'Hello Javascript';
+                
+            }
+
+            function changeStyle() {
+
+                const greetingElement = document.getElementById("greeting");
+                greetingElement.style.color='Red';
+                
+            }
+
+            document.getElementById('greetButton').addEventListener('click',displayGreeting);
+            document.getElementById('greetButton').addEventListener('click',changeStyle);
+            document.getElementById('greetButton').removeEventListener('click',changeStyle);
+
+
+
+        </script>
+    </body>
+</html>
