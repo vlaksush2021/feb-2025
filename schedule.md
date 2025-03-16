@@ -41,6 +41,7 @@
 * Form Elements
 * Input Types
 * Form Attribu
+* 
  <hr />
 
  ## CSS
@@ -83,7 +84,7 @@
 
 <hr />
 
-## Week 3
+## Javascript
 ### Part 1
 
 **JavaScript Basics:**
@@ -119,3 +120,31 @@
 * Declaring and Invoking Functions
 * Function Parameters and Return Values
 * Introduction to Events in JavaScript
+
+### Part 3
+**DOM Events and Event Listeners:**
+
+* Understanding the DOM (Document Object Model)
+* Handling DOM Events
+* Implementing Event Listeners
+
+**Validation and Error Handling:**
+
+* Form Validation in JavaScript
+* Error Handling with Try-Catch
+* Handling Exceptions
+
+### Part 4
+**Functional Programming in JS:**
+
+* Introduction to Functional Programming
+* Functions as First-Class Citizens
+* Higher-Order Functions and Callbacks
+* Map, Filter, and Reduce Functions
+
+**Asynchronous Programming in JS:**
+
+* Asynchronous JavaScript
+* Callbacks and Promises
+* Async/Await for Asynchronous Operations
+
