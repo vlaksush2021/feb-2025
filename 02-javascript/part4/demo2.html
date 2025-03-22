@@ -1,0 +1,65 @@
+<html>
+
+<body>
+
+    <script>
+        // console.log("step 1-start");
+        // setTimeout(() => {
+        //     console.log("step 2 - progressing");
+        // },0)
+
+        // console.log("step 3 - closing");
+
+
+
+        //callback
+        //promises
+        //async await
+
+        // function fetchData(callback) {
+        //     console.log("task2-started fetching...")
+
+        //     setTimeout( () => {
+        //         callback("data is ready..")
+        //     },2000)
+
+        // }
+        // function displayData(data) {
+
+        //     console.log(data)
+        //     console.log("task2 - done")
+        // }
+
+        // console.log("task1");
+        // fetchData(displayData); // callback
+        // console.log("task3")
+
+
+       const f1 = 
+            new Promise((resolve, reject) => {
+                let flag = false;
+                setTimeout(() => {
+                    if (flag)
+                        resolve({ id: 101, name: 'ram', salary: 1000 })
+                    else
+                        reject("there is an issue")
+                }, 2000)
+            })
+        
+
+        f1
+        .then((data) => {
+            console.log(data.name)
+        })
+        .then( data => {
+
+        })
+        .catch((err) => {
+            console.log("Error : "+err)
+        })
+
+
+    </script>
+</body>
+
+</html>

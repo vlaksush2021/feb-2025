@@ -1,0 +1,117 @@
+<html>
+
+<body>
+
+    <script>
+
+        // //immutable
+        //  const person = {name:'ram',salary:1000,desg:'manager'}
+        //  updatedPerson = {...person,salary:2000}
+        //  console.log(person)
+        //  console.log(updatedPerson)
+
+        //  //first class citizen
+        //  let a = function() {
+        //     console.log("this is function expression")
+        //  }
+
+        //Arrow function  => 
+
+        // function test(a,b) {
+        //     return (a+b)
+        // }
+
+
+
+        // const test = (a,b) => { 
+        //     //st1
+        //     //st2
+
+        //     return a+b 
+        // }
+
+
+        // console.log( test(10,20))
+
+
+        //  function f2(){
+        //     //dfsdf//sdfsf///sdfsdf//sdf
+        //     return "f22";
+        //  }
+        //  a();
+
+        //hoisting - declarative functions and var members
+
+
+
+        // HOF
+
+        //  function multiplier(factor) {
+        //     return function (num) {
+        //         return num * factor;
+        //     }
+        //  }
+
+        //  const result = multiplier(2);
+        //  console.log(result(5))
+
+        /*
+        Arrays - HOF
+        map
+        filter
+        forEach
+        
+        */
+
+
+
+
+        // const employees = [{id:101,name:'ram',salary:1000},
+        // {id:102,name:'peter',salary:2000},
+        // {id:103,name:'mohamed',salary:3000}
+        //  ]
+
+
+        // const filteredEmployees = employees.filter( (emp) => {
+        //     return emp.salary>=2000
+
+        // })
+        // console.log(filteredEmployees)
+
+
+
+
+
+        //Destructuring 
+
+        const employee = { id: 101, name: 'ram', salary: 1000 }
+
+        // // const id = employee.id;
+        // // const name = employee.name;
+        // // const salary = employee.salary;
+
+        // const { salary, id, name: fullname } = employee
+
+        // console.log(id, fullname, salary)
+
+
+        const numbers = ["ram","krishna"];
+        const [first,second,third] = numbers
+
+        console.log(first, second, third)
+        
+
+
+        
+
+
+
+        
+        // console.log(employee)
+        // console.log(employee.name) // dot notation
+        // console.log(employee["name"]) // bracket notation
+
+    </script>
+</body>
+
+</html>
