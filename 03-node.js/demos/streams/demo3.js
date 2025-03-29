@@ -100,10 +100,8 @@ const uppercaseTransform = new Transform({
         callback()
     }
 })
-
 const readableStream = fs.createReadStream('output.txt');
 const writableStream = fs.createWriteStream('uppercaseOutput2.txt');
-
 pipeline(
     readableStream,
     uppercaseTransform,
@@ -116,7 +114,6 @@ pipeline(
         }
     }
 )
-
 // readableStream.on('end', () => {
 //     writableStream.end();
 //     console.log('File transformed and written to uppercaseOutput.txt.');
