@@ -85,3 +85,29 @@ const readDirFile= async () => {
     }
 }
 readDirFile()
+
+
+
+
+// const fs = require('fs').promises;
+// const readDirFiles = async () => {
+//     try {
+//         const result = await fs.readdir('../');
+//         console.log('Result :', result)
+//         result.forEach(async (fileDir) => {
+//             const stats = await fs.stat(fileDir)
+//         if (fileDir.isFile()) {
+//             console.log(fileDir,'-File')
+//         }
+//         else if(fileDir.isDirectory()) {
+//             console.log(fileDir,'-Directory')
+//         }
+//         }
+//     )
+//     }
+//     catch (err) {
+//         console.log(err)
+//     }
+// }
+
+// readDirFiles();

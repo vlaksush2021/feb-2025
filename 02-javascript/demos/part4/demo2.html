@@ -3,6 +3,8 @@
 <body>
 
     <script>
+        // // understanding setTimeout / Delay function
+        
         // console.log("step 1-start");
         // setTimeout(() => {
         //     console.log("step 2 - progressing");
@@ -11,11 +13,14 @@
         // console.log("step 3 - closing");
 
 
-
+        //// Different ways of async
         //callback
         //promises
         //async await
 
+        
+        
+        // // callback
         // function fetchData(callback) {
         //     console.log("task2-started fetching...")
 
@@ -35,9 +40,35 @@
         // console.log("task3")
 
 
-       const f1 = 
-            new Promise((resolve, reject) => {
-                let flag = false;
+        // //promises
+
+    //    const f1 = 
+    //         new Promise((resolve, reject) => {
+    //             let flag = true;
+    //             setTimeout(() => {
+    //                 if (flag)
+    //                     resolve({ id: 101, name: 'ram', salary: 1000 })
+    //                 else
+    //                     reject("there is an issue")
+    //             }, 2000)
+    //         })
+        
+
+    //     f1
+    //     .then((data) => {
+    //         console.log(data.name)
+    //     })
+    //     .then( data => {
+
+    //     })
+    //     .catch((err) => {
+    //         console.log("Error : "+err)
+    //     })
+
+
+    const f1 = () => {
+        return new Promise((resolve, reject) => {
+                let flag = true;
                 setTimeout(() => {
                     if (flag)
                         resolve({ id: 101, name: 'ram', salary: 1000 })
@@ -45,18 +76,32 @@
                         reject("there is an issue")
                 }, 2000)
             })
-        
+    }
 
-        f1
-        .then((data) => {
-            console.log(data.name)
-        })
-        .then( data => {
+    const fetchData =  async () => {
+        try{
+            const res = await f1(); 
+            console.log(res)
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+    console.log("start");
+    fetchData();
+    console.log("end")
 
-        })
-        .catch((err) => {
-            console.log("Error : "+err)
-        })
+    // //OR
+    // //Immediately Invoked Function Expressions  (IIEF)
+    // (async () => {
+    //     try{
+    //         const res = await f1(); 
+    //         console.log(res)
+    //     }
+    //     catch(err){
+    //         console.log(err);
+    //     }
+    // })()
 
 
     </script>
