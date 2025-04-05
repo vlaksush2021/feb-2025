@@ -16,14 +16,22 @@ const client = http.request(options,(res) => {
     res.on('data',(chunk) => {
         data += chunk;
     })
-    res.on('end' , () => {
-        try{
-            console.log(data)
-        }
-        catch(e){
-            console.log("error : "+e)
-        }
-    })
+    // res.on('end' , () => {
+    //     try{
+    //         console.log(data)
+    //     }
+    //     catch(e){
+    //         console.log("error : "+e)
+    //     }
+    // })
+console.log("----------------------")
+res.on('end', () => {
+    console.log("data ready")
+    console.log(data)
+})
+console.log("----------------------")
+
+    console.log(data)
 
     client.on('error', (e) => {
         console.log(' error in client')
