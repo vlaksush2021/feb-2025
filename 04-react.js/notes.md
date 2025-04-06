@@ -26,4 +26,11 @@ react component - with jsx => js code + html code
 * Functional components in React are JavaScript functions that return JSX and are used to build UI components.
 
 * Props allow you to pass data from one component to another, enabling dynamic content in your application.
-    
+
+
+## State Management with Hooks
+* The `useState` hook allows functional components to manage and update state in React.
+* By using `event handlers` like `onClick` and `onChange`, you can capture user interactions and trigger state updates.
+
+
+
