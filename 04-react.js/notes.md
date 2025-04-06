@@ -21,4 +21,9 @@ react component - with jsx => js code + html code
 
 
 
+## Functional Component and Props
+
+* Functional components in React are JavaScript functions that return JSX and are used to build UI components.
+
+* Props allow you to pass data from one component to another, enabling dynamic content in your application.
     
