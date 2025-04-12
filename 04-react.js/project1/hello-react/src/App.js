@@ -6,6 +6,9 @@ import InputField from './components/InputField';
 import Employee from './components/Employee';
 import Student from './components/Student';
 import DataFetchingComponent from './components/DataFetchingComponent';
+import ConditionalRenderingComponent from './components/ConditionalRenderingComponent';
+import ControlledComponent from './components/ControlledComponent';
+import UnControlledComponent from './components/UnControlledComponent';
 
 function App() {
   const productInfo = { name: 'Laptop', price: '$1000' };
@@ -47,7 +50,19 @@ function App() {
 
 
      {/* useEffect Demo */}
-      <DataFetchingComponent />
+      {/* <DataFetchingComponent /> */}
+
+      {/* Conditional Rendering Demo */}
+      {/* <ConditionalRenderingComponent /> */}
+
+
+      {/* Control Component */}
+      <ControlledComponent />
+
+      {/* UnControlled Component */}
+      {/* <UnControlledComponent /> */}
+
+
     </div>
   );
 }

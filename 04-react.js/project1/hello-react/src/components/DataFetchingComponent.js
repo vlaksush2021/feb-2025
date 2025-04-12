@@ -14,15 +14,20 @@ export default function DataFetchingComponent() {
     // // without [] - sideeffects will call  (during componet loading (rendering)), re-rendering
     // //[data] => sideeffects will call  (during componet loading (rendering)), re-rendering based on changes in data
 
-
     const [data, setData] = useState([])
-
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
+
+        fetch('https://jsonplaceholder.typicode.com/users') // mounting
             .then((response) => response.json())
             .then((jsonRes) => setData(jsonRes))
             .catch((err) => console.log('Error ' + err))
+        
+        return () => { //unmounting / 
+            setData([]) //reset the data
+        }
+    
     }, [])
+    
 
     return (
         <div>
@@ -34,8 +39,6 @@ export default function DataFetchingComponent() {
                     </p>
                 ))
             }
-
-
         </div>
     )
 }
