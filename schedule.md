@@ -175,3 +175,47 @@
 * Introduction to REST Services  
 * Understanding Services, Controllers, Routers  
 * Writing Simple CRUD REST Services  
+
+<hr />
+
+# React.js
+## **Day 1: Introduction and Core Concepts**
+### Introduction to React and JSX
+- What is React?
+- React as a library for building user interfaces (UI)
+- Overview of **Single Page Applications (SPA)** vs. Multi-Page Applications
+- Introduction to JSX: Combining JavaScript and HTML-like syntax
+- Hands-on: Write basic JSX code and explore how it compiles to JavaScript
+
+### Functional Components and Props
+- Introduction to **Functional Components**
+- Understanding component structure and rendering
+- Passing data between components using **props**
+- Hands-on: Create simple components that accept props to display dynamic data
+
+### State Management with Hooks
+- Introduction to state in functional components with `useState`
+- Handling state changes and rendering updates
+- Event handling (onClick, onChange)
+- Hands-on: Build a simple interactive app (like a counter or input field) to manage state and handle user interactions
+
+## **Day 2: Component Lifecycle and Forms in Functional Components**
+
+### `useEffect` Hook for Side Effects
+- Introduction to **side effects** in React (e.g., data fetching, subscriptions)
+- Using the `useEffect` hook to manage lifecycle behavior in functional components
+  - Running code after render
+  - Specifying dependencies for `useEffect`
+  - Cleaning up side effects
+- Hands-on: Fetch data from an API and display it in a component
+
+### Conditional Rendering and Lists
+- **Conditional Rendering**: Showing or hiding components based on state (using `if`, `&&`, and ternary operators)
+- Rendering **Lists** using `.map()` and understanding the importance of **keys** in lists
+- Hands-on: Display a list of items from API data, with conditional rendering (e.g., show a loading spinner until data loads)
+
+###  Handling Forms and Input State with `useState`
+- Controlled vs. uncontrolled components in React forms
+- Managing form input state using the `useState` hook
+- Handling form submission and validation
+- Hands-on: Build a form with multiple input fields, validate input, and manage form state (e.g., login or contact form)
