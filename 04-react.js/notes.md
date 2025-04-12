@@ -33,4 +33,15 @@ react component - with jsx => js code + html code
 * By using `event handlers` like `onClick` and `onChange`, you can capture user interactions and trigger state updates.
 
 
+## Component Lifecycle and Forms in Functional Components
 
+### Demo - Passing data between component
+
+parent component -> child component
+parent component <- child component
+
+
+### useEffect
+* The `useEffect` hook allows you to handle side effects like data fetching, API calls, or subscriptions in functional components.
+
+* It runs after the component renders and can clean up side effects when the component unmounts or re-renders.
