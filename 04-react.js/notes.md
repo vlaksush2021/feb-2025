@@ -96,3 +96,58 @@ Better for legacy forms or when migrating older HTML code.
 
 
 <input type="text" name="username" />
+
+
+## Advanced React Hooks
+* `useRef` manages references to DOM elements and persistent values without causing re-renders.  
+
+* `useReducer` handles complex state logic efficiently, especially when managing multiple related state values.  
+
+### What is useReducer
+* useReducer is a React hook that lets you manage more complex state logic than useState.   
+
+* It's especially useful when:
+
+* You have multiple related pieces of state (e.g., a form with multiple fields like username and password).  
+
+* You need to handle multiple types of actions that affect the state (e.g., setting a value, resetting a form, etc.).  
+
+* You want better control over how your state is updated, similar to how Redux works (but simpler).  
+
+
+### Why
+Why use useReducer over useState?
+
+useState is great for simple scenarios where you’re managing one or two state   
+values, but when things get more complex, useReducer is a better choice.  
+
+### When to use useState:
+
+When you only need to manage a few simple state values.  
+Example: Tracking the value of a single input field.  
+
+### When to use useReducer
+
+When you have multiple pieces of state that are related.  
+When the state transitions depend on the type of actions  
+(e.g., setting values, resetting form fields).  
+When you want to make your state logic easier to read and maintain, especially as your app grows.  
+
+### How does useReducr Work?
+It’s similar to useState, but with more structured control.  
+Instead of calling a setState function directly (like in useState), you use a dispatch function to send an action.  
+The action tells the reducer how to update the state.  
+
+
+---
+
+* useState gives you a state value and a way to update it (setState).
+
+* useReducer gives you a state value and a function (dispatch) to trigger specific updates through a reducer function that decides how to change the state.
+
+-----
+
+## Custom Hook
+A custom hook allows you to encapsulate and reuse logic across multiple components, keeping your code DRY (Don't Repeat Yourself).  
+
+

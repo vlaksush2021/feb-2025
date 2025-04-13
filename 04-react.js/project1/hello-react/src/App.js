@@ -9,6 +9,8 @@ import DataFetchingComponent from './components/DataFetchingComponent';
 import ConditionalRenderingComponent from './components/ConditionalRenderingComponent';
 import ControlledComponent from './components/ControlledComponent';
 import UnControlledComponent from './components/UnControlledComponent';
+import LoginForm from './components/LoginForm';
+import LoginForm2 from './components/LoginForm2';
 
 function App() {
   const productInfo = { name: 'Laptop', price: '$1000' };
@@ -57,10 +59,16 @@ function App() {
 
 
       {/* Control Component */}
-      <ControlledComponent />
+      {/* <ControlledComponent /> */}
 
       {/* UnControlled Component */}
       {/* <UnControlledComponent /> */}
+
+      {/* useReducer */}
+      {/* <LoginForm /> */}
+
+      {/* Custom Hook */}
+      <LoginForm2 />
 
 
     </div>
