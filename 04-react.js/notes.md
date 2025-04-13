@@ -151,3 +151,17 @@ The action tells the reducer how to update the state.
 A custom hook allows you to encapsulate and reuse logic across multiple components, keeping your code DRY (Don't Repeat Yourself).  
 
 
+## Context API
+* The `Context` API solves the `prop drilling` problem by allowing global state sharing across components without passing props manually.  
+
+* `useContext` helps consume the global state in functional components.  
+
+## Performance Optimization in React
+* Unnecessary `re-renders` can slow down React applications, affecting performance.  
+* Optimizations like `React.memo`, `useMemo`, and `useCallback` help avoid redundant re-renders and re-calculations, improving efficiency.  
+
+`React.memo`: It prevents child components from re-rendering unless their props have changed, which is useful when components receive props that rarely change.  
+
+`useMemo`: It memoizes expensive calculations, so React doesn't recompute them unnecessarily on every render.
+
+`useCallback`: It memoizes functions, preventing them from being recreated every time the component re-renders.

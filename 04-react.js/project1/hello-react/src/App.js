@@ -11,10 +11,15 @@ import ControlledComponent from './components/ControlledComponent';
 import UnControlledComponent from './components/UnControlledComponent';
 import LoginForm from './components/LoginForm';
 import LoginForm2 from './components/LoginForm2';
+import A from './components/context/A';
+import NameContext from './components/context/NameContext';
+import ParentComponent from './components/performance/ParentComponent';
+import EmployeeManagement from './components/performance/EmployeeManagement';
+import EmployeeManagementComponent from './components/performance/EmployeeManagementComponent';
 
 function App() {
   const productInfo = { name: 'Laptop', price: '$1000' };
-  const name = "React.js"
+  const name = "React.js";
 
 
   ////passing data between parent and child
@@ -28,6 +33,10 @@ function App() {
   //   setStudCount(count)
   // }
 
+
+  // Context API
+  const orgName = "ABC Technologies"
+
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>Hello React</h1>
@@ -35,23 +44,23 @@ function App() {
 
       // Lab2
       <Product {...productInfo} /> */}
-      
+
       {/* useState */}
       {/* <Counter /> */}
-      
+
       {/* Lab3 */}
       {/* <InputField /> */}
 
 
       {/* pasing data between components */}
-     {/* <h3>Employee Count {empCount} </h3>
+      {/* <h3>Employee Count {empCount} </h3>
      <h3>Student Count {studCount} </h3>
 
      <Employee empCount={empCount} empAddHandler={empAddHandler} />
      <Student studCount={studCount} studAddHandler={studAddHandler} /> */}
 
 
-     {/* useEffect Demo */}
+      {/* useEffect Demo */}
       {/* <DataFetchingComponent /> */}
 
       {/* Conditional Rendering Demo */}
@@ -68,7 +77,19 @@ function App() {
       {/* <LoginForm /> */}
 
       {/* Custom Hook */}
-      <LoginForm2 />
+      {/* <LoginForm2 /> */}
+
+      {/* Context API */}
+      {/* <NameContext.Provider value={{orgName,emp:{id:101,name:'krishna',salary:2000},numbers:[10,20,30,40]}}>
+        <A />
+      </NameContext.Provider> */}
+
+
+      {/* Performance */}
+      {/* <ParentComponent /> */}
+      {/* <EmployeeManagement /> */}
+      <EmployeeManagementComponent />
+
 
 
     </div>
