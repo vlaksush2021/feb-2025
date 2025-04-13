@@ -219,3 +219,31 @@
 - Managing form input state using the `useState` hook
 - Handling form submission and validation
 - Hands-on: Build a form with multiple input fields, validate input, and manage form state (e.g., login or contact form)
+
+- ## **Day 3: Advanced Hooks, Context API, and Performance Optimization**
+### Advanced React Hooks
+- Introduction to the `useRef` hook:
+  - Managing references to DOM elements
+  - Persistent values across renders (without causing re-renders)
+- Introduction to `useReducer`:
+  - Using `useReducer` for more complex state logic (like Redux-style state management)
+  - Comparing `useState` vs. `useReducer`
+- Hands-on: Build a form using `useReducer` to manage multiple field states more efficiently
+
+### Global State Management with Context API
+- Introduction to **Context API**:
+  - Solving the “prop drilling” problem by sharing state across multiple components
+  - Creating and providing context
+  - Consuming context using `useContext` hook in functional components
+- Hands-on: Build a simple app with multiple components that share state globally using the Context API (e.g., a theme switcher or user authentication system)
+
+### Performance Optimization in React
+- Introduction to React performance issues:
+  - Unnecessary re-renders and how they impact performance
+- Using **`React.memo`** to prevent re-renders of child components
+- Introduction to **`useMemo`**:
+  - Memoizing expensive calculations to avoid recalculating on every render
+- Introduction to **`useCallback`**:
+  - Memoizing functions to avoid unnecessary re-creations of handlers
+- Hands-on: Optimize a list filtering app using `React.memo`, `useMemo`, and `useCallback`
+
