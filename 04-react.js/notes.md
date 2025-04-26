@@ -165,3 +165,170 @@ A custom hook allows you to encapsulate and reuse logic across multiple componen
 `useMemo`: It memoizes expensive calculations, so React doesn't recompute them unnecessarily on every render.
 
 `useCallback`: It memoizes functions, preventing them from being recreated every time the component re-renders.
+
+<hr />
+
+## Routing
+* react-router   - 
+* reach-router   - easy to use
+
+* Reach Router is a lightweight router for React that focuses on accessibility and ease of use.
+* It allows for simple, declarative navigation between pages in single-page applications.
+
+### Demo - reach router
+**Note** Ensure your react version is 16 (react router will work only till 16th version of react)
+1. Install `npm install @reach/router`   
+2. Setup routing in react app using <Router>  
+3. Create basic routes for different pages  
+4. Navigate between pages using <Link> and `navigate` function   
+#### app.js
+```js
+import { Router, Link } from '@reach/router';
+
+
+.....
+
+
+
+
+      <div align="right">
+        <Link to="/">Home</Link>  <Link to="/about">About</Link>   |   <Link to="/contact">Contact</Link>
+
+      </div>
+      <hr />
+      <Router>
+        <Home path="/" />
+        <About path="/about" />
+        <Contact path="/contact" />
+      </Router>
+
+      <h3 style={{ marginTop: 300 }}>Footer Page</h3>
+```
+
+#### Home.js
+```js
+import { Link, navigate } from '@reach/router'
+import React from 'react'
+
+export default function Home() {
+    return (
+        <div>
+            <h3>Home Page</h3>
+        </div>
+    )
+}
+
+```
+
+#### about.js
+```js
+import { navigate } from '@reach/router'
+import React from 'react'
+
+export default function About() {
+    return (
+        <div><h3>About Us</h3>
+
+            <button onClick={() => navigate('/')}>goto home</button>
+        </div>
+    )
+}
+```
+#### contact.js
+```js
+import { navigate } from '@reach/router'
+import React from 'react'
+
+export default function Contact() {
+  return (
+    <div><h3>Contact Page</h3>
+        <button onClick={() => navigate('/')}>goto home</button>
+    
+    </div>
+  )
+}
+```
+
+
+<hr />
+
+
+### Demo - react router
+1. Install `npm install react@16 react-dom@16`  
+`npm install react-router-dom@5.3.0`  
+2. Setup  Router , Route , Routes,   
+3. Create basinc routes for different pages <Link>  
+4. Navigation use , `history.push`  
+
+#### app.js
+```js
+import { BrowserRouter as Router, Switch, Route, Link, useNavigate } from 'react-router-dom'
+
+.........
+
+ <div align="right">
+        <Router>
+          <Link to="/">Home</Link>  <Link to="/about">About</Link>   |   <Link to="/contact">Contact</Link>
+
+          <Switch>
+
+
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+
+          </Switch>
+
+        </Router>
+
+      </div>
+
+```
+
+#### Home.js
+```js
+import { Link, navigate } from '@reach/router'
+import React from 'react'
+
+export default function Home() {
+    return (
+        <div>
+            <h3>Home Page</h3>
+        </div>
+    )
+}
+
+```
+
+#### about.js
+```js
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+
+function About({ history }) {
+  return (
+    <div>
+      <h3>About Us</h3>
+      <button onClick={() => history.push('/')}>Go to Home</button>
+    </div>
+  );
+}
+
+export default withRouter(About);
+```
+#### contact.js
+```js
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+
+function Contact({ history }) {
+  return (
+    <div>
+      <h3>About Us</h3>
+      <button onClick={() => history.push('/')}>Go to Home</button>
+    </div>
+  );
+}
+
+export default withRouter(Contact);
+```

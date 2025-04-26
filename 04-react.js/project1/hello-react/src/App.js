@@ -16,6 +16,16 @@ import NameContext from './components/context/NameContext';
 import ParentComponent from './components/performance/ParentComponent';
 import EmployeeManagement from './components/performance/EmployeeManagement';
 import EmployeeManagementComponent from './components/performance/EmployeeManagementComponent';
+import Home from './components/routing/Home';
+import About from './components/routing/About';
+import Contact from './components/routing/Contact';
+
+// below one line is for reach-router
+import { Router, Link } from '@reach/router';
+
+// below one line is for react router 
+//import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+
 
 function App() {
   const productInfo = { name: 'Laptop', price: '$1000' };
@@ -38,7 +48,8 @@ function App() {
   const orgName = "ABC Technologies"
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    // <div style={{ textAlign: 'center' }}>
+    <div>
       <h1>Hello React</h1>
       {/* <FirstComponent name={name} org="ABC" />
 
@@ -88,7 +99,48 @@ function App() {
       {/* Performance */}
       {/* <ParentComponent /> */}
       {/* <EmployeeManagement /> */}
-      <EmployeeManagementComponent />
+      {/* <EmployeeManagementComponent /> */}
+
+
+      {/* Routing - reach router */}
+      
+      <hr />
+      <div align="right">
+        <Link to="/">Home</Link>  <Link to="/about">About</Link>   |   <Link to="/contact">Contact</Link>
+      </div>
+      <hr />
+      <Router>
+        <Home path="/" />
+        <About path="/about" />
+        <Contact path="/contact" />
+      </Router>
+      <h3 style={{ marginTop: 300 }}>Footer Page</h3> 
+
+
+
+
+      {/* Routing - react router */}
+      {/* 
+      <hr />
+      <div align="right">
+        <Router>
+          <Link to="/">Home</Link>  <Link to="/about">About</Link>   |   <Link to="/contact">Contact</Link>
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
+        </Router>
+      </div>
+      <hr />
+      <h3 style={{ marginTop: 300 }}>Footer Page</h3> 
+      */}
+
+
+
+
+
 
 
 
