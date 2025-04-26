@@ -11,4 +11,6 @@ const EmployeeList = ({ employees }) => {
         </div>
     );
 };
-export default React.memo(EmployeeList);
+export default EmployeeList;
+
+// export default React.memo(EmployeeList);
