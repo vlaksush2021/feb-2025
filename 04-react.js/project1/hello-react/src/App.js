@@ -22,6 +22,16 @@ import Contact from './components/routing/Contact';
 
 // below one line is for reach-router
 import { Router, Link } from '@reach/router';
+import RouterApp from './components/routing-lab-2/RouterApp';
+// import RouterApp from './s/router-lab-2/RouterApp';
+// import RouterApp from './components/nested-routing-demo/RouterApp';
+// import RouterApp from './components/dynamic-routing-demo/RouterApp';
+// import RouterApp from './components/routing-lab-1/RouterApp';
+
+
+// import RouterApp from './s/router-lab-2/RouterApp';
+// import RouterApp from './s/nested-routing-demo/RouterApp';
+
 
 // below one line is for react router 
 //import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
@@ -103,8 +113,7 @@ function App() {
 
 
       {/* Routing - reach router */}
-      
-      <hr />
+      {/* <hr />
       <div align="right">
         <Link to="/">Home</Link>  <Link to="/about">About</Link>   |   <Link to="/contact">Contact</Link>
       </div>
@@ -114,7 +123,18 @@ function App() {
         <About path="/about" />
         <Contact path="/contact" />
       </Router>
-      <h3 style={{ marginTop: 300 }}>Footer Page</h3> 
+      <h3 style={{ marginTop: 300 }}>Footer Page</h3>  */}
+
+        {/* Router Lab */}
+        {/* <RouterApp /> */}
+
+        {/* Dnamic Routing - demo */}
+        {/* <RouterApp /> */}
+
+
+        {/* Nested Routing */}
+        {/* <RouterApp /> */}
+
 
 
 
@@ -138,9 +158,20 @@ function App() {
       */}
 
 
+      {/* Router Lab1 */}
+      {/* <RouterApp /> */}
 
 
+      {/* Dnamic Routing - Demo */}
+      {/* <RouterApp /> */}
 
+
+      {/* Nested Routing - Demo */}
+      {/* <RouterApp /> */}
+
+
+      {/* Router Lab 2 (Dynamic Router) */}
+      <RouterApp />
 
 
 

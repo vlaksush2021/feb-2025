@@ -332,3 +332,18 @@ function Contact({ history }) {
 
 export default withRouter(Contact);
 ```
+
+## Dynamic Routing and Nested Routing 
+* `Dynamic Routing` allows passing parameters through the URL, enabling components to render based on those parameters (e.g., user profiles).  
+
+* `Nested Routes` help organize related components under a common route, making applications more structured and manageable.  
+
+
+Fetching Data - URL (dummy data)
+redux 
+
+mysql - setup, db,table,simple crud
+Integration - msql -> node.js (endpoint) -> react -> browser
+
+Project 
+
