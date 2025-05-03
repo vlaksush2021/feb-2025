@@ -340,7 +340,127 @@ export default withRouter(Contact);
 
 
 Fetching Data - URL (dummy data)
-redux 
+
+# Redux
+* Redux provides a centralized state management system, meaning we store all our app’s state in one place, which makes it easier to manage and debug.   
+* Redux is especially useful for complex applications, where data flows in multiple directions and across many components.  
+
+## Store
+The Redux store holds the entire `app's state`. Think of it as a ‘single source of truth’ for our application. Any component can access data from this store, avoiding the need to pass props down through multiple layers.  
+
+## Actions
+Actions are `objects` describing what needs to change in the state, and action creators are functions that generate these actions.  
+
+## Reducer
+Reducers are pure functions that decide how the state should change based on the action received. In simple terms, reducers take the current state and an action, then return a new state."
+
+
+## Simple Demos
+* To Install Redux for React 18
+```
+npm install redux
+```
+
+* To Install Redux for React 16
+```
+npm install redux@4.2.1
+```
+
+### Demo1 - index.js
+
+```js
+function reducer1(state = 0, action) {
+  if (action.type === "INCREMENT") {
+    return state += 1;
+  }
+  else if (action.type === "DECREMENT") {
+    return state -= 1;
+  }
+  return state;
+}
+let store = createStore(reducer1);
+console.log(store.getState())
+store.dispatch({type:"INCREMENT"})
+console.log(store.getState())
+store.dispatch({type:"INCREMENT"})
+console.log(store.getState())
+store.dispatch({type:"DECREMENT"})
+console.log(store.getState())
+store.dispatch({type:"INCREMENT"})
+console.log(store.getState())
+
+```
+## Demo2 - 
+```js
+function reducer2(state = {name:'bala'}, action) {
+  if (action.type === "CHANGENAME") {
+    return {name:action.name};
+  }
+  else if (action.type === "RESETNAME") {
+    return {name:'bala'}
+  }
+  return state;
+}
+
+let store = createStore(reducer2);
+console.log(store.getState())
+store.dispatch({type:"CHANGENAME",name:"ganesh"})
+console.log(store.getState())
+store.dispatch({type:"RESETNAME"})
+console.log(store.getState())
+```
+
+
+## Demo3 - CombineReducers
+```js
+function reducer1(state = 0, action) {
+  if (action.type === "INCREMENT") {
+    return state += 1;
+  }
+  else if (action.type === "DECREMENT") {
+    return state -= 1;
+  }
+  return state;
+}
+
+function reducer2(state = {name:'bala'}, action) {
+  if (action.type === "CHANGENAME") {
+    return {name:action.name};
+  }
+  else if (action.type === "RESETNAME") {
+    return {name:'bala'}
+  }
+  return state;
+}
+
+let reducer  = combineReducers({
+re1:reducer1,
+re2:reducer2
+})
+
+let store = createStore(reducer);//4 actions
+
+console.log(store.getState().re1)
+console.log(store.getState().re2.name)
+
+store.dispatch({type:"DECREMENT"})
+console.log(store.getState().re1)
+console.log(store.getState().re2.name)
+
+store.dispatch({type:"CHANGENAME",name:"ramesh"})
+console.log(store.getState().re1)
+console.log(store.getState().re2.name)
+
+
+store.dispatch({type:"DECREMENT"})
+store.dispatch({type:"RESETNAME"})
+
+console.log(store.getState().re1)
+console.log(store.getState().re2.name)
+```
+
+
+
 
 mysql - setup, db,table,simple crud
 Integration - msql -> node.js (endpoint) -> react -> browser

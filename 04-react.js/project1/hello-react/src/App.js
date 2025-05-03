@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FirstComponent from './components/FirstComponent';
 import { Product } from './components/Product';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 import InputField from './components/InputField';
 import Employee from './components/Employee';
 import Student from './components/Student';
@@ -35,6 +35,10 @@ import RouterApp from './components/routing-lab-2/RouterApp';
 
 // below one line is for react router 
 //import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+
+import Counter from './s/s-redux/Counter';
+import ToDoComponent from './s/s-redux/lab/ToDoComponent';
+import RTKComponent from './s/s-redux/RTKComponent';
 
 
 function App() {
@@ -125,15 +129,15 @@ function App() {
       </Router>
       <h3 style={{ marginTop: 300 }}>Footer Page</h3>  */}
 
-        {/* Router Lab */}
-        {/* <RouterApp /> */}
+      {/* Router Lab */}
+      {/* <RouterApp /> */}
 
-        {/* Dnamic Routing - demo */}
-        {/* <RouterApp /> */}
+      {/* Dnamic Routing - demo */}
+      {/* <RouterApp /> */}
 
 
-        {/* Nested Routing */}
-        {/* <RouterApp /> */}
+      {/* Nested Routing */}
+      {/* <RouterApp /> */}
 
 
 
@@ -171,9 +175,14 @@ function App() {
 
 
       {/* Router Lab 2 (Dynamic Router) */}
-      <RouterApp />
+      {/* <RouterApp /> */}
 
 
+
+
+
+      {/* Redux Lab  */}
+      {/* <ToDoComponent /> */}
 
     </div>
   );
