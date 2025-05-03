@@ -459,6 +459,49 @@ console.log(store.getState().re1)
 console.log(store.getState().re2.name)
 ```
 
+## Connecting Redux with React
+We use the `Provider` component to give our app access to the Redux store and the connect function or `useSelector` and `useDispatch` hooks to access and modify state.
+
+## To install react-redux
+```bash
+npm install react-redux
+```
+
+## To install react-redux on React 16
+```bash
+npm install react-redux@7.2.9
+```
+
+
+## react-redux demo - refer the folder redux-demos in react project
+
+## Middleware
+* Redux middleware is a layer in the action flow that can intercept actions and allow additional logic to be run before updating the state.
+
+* Middleware can be used for logging, async actions, or error handling.
+
+### Dependenc
+```bash
+npm install redux-logger
+
+
+//or for react 16
+npm install redux-logger@3.0.6
+```
+
+
+## Redux Thunk
+* Redux Thunk is a middleware for Redux that allows `action creators` to return a `function`, enabling `asynchronous` logic like API calls.
+
+It’s important for managing side effects and improving state management in our applications.
+
+### Dependency
+```bash
+npm install redux-thunk
+
+//for react 16
+npm install redux-thunk@2.4.2 
+```
 
 
 

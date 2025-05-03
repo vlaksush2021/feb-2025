@@ -36,9 +36,15 @@ import RouterApp from './components/routing-lab-2/RouterApp';
 // below one line is for react router 
 //import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
-import Counter from './s/s-redux/Counter';
+// import Counter from './s/s-redux/Counter';
 import ToDoComponent from './s/s-redux/lab/ToDoComponent';
 import RTKComponent from './s/s-redux/RTKComponent';
+// import Counter from './components/redux-demos/Counter';
+import { Provider } from 'react-redux';
+import store from './store';
+import Counter from './components/redux-demos/CounterDemo';
+import CounterDemo from './components/redux-demos/CounterDemo';
+import RTKCounterDemo from './components/redux-demos/rtk/RTKCounterDemo';
 
 
 function App() {
@@ -178,7 +184,13 @@ function App() {
       {/* <RouterApp /> */}
 
 
+        {/* Redux Demo */}
+        
+        {/* <CounterDemo /> */}
 
+        {/* ReduxTookKit */}
+        <RTKCounterDemo />
+      
 
 
       {/* Redux Lab  */}
