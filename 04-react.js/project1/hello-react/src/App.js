@@ -45,6 +45,8 @@ import store from './store';
 import Counter from './components/redux-demos/CounterDemo';
 import CounterDemo from './components/redux-demos/CounterDemo';
 import RTKCounterDemo from './components/redux-demos/rtk/RTKCounterDemo';
+import Button1 from './s/s-test/Button1';
+import SGreeting from './s/s-test/SGreeting';
 
 
 function App() {
@@ -184,13 +186,24 @@ function App() {
       {/* <RouterApp /> */}
 
 
-        {/* Redux Demo */}
-        
-        {/* <CounterDemo /> */}
+      {/* Redux Demo */}
 
-        {/* ReduxTookKit */}
-        <RTKCounterDemo />
-      
+      {/* <CounterDemo /> */}
+
+      {/* ReduxTookKit */}
+      {/* <RTKCounterDemo /> */}
+
+
+
+
+
+
+
+
+
+      {/* stest */}
+      {/* <Button1 label="Submit Me"/> */}
+      <SGreeting />
 
 
       {/* Redux Lab  */}
