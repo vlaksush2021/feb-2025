@@ -505,6 +505,96 @@ npm install redux-thunk@2.4.2
 
 
 
+# Testing
+
+## What is Testing
+Testing checks if our app works `as expected` and delivers the right experience to users.  
+Its like `quality control` , ensuring each part of the app functions well before reaching users.  
+
+## Why Testing
+Testing catches bugs early, saves time and ensures reliability.
+Reliable apps keeps user happy and improve the app's reputation.
+
+## Testing Pyramid
+![alt text](image.png)
+
+## Testing Tools
+### Jest
+Framework for running and organizing tests. (React ,Express )
+
+### React Testing Library
+Focuses on testing from the user's perspective, not just code.
+
+## Jest
+Focuses on speed and ease, making it ideal for react apps. official docs - jestjs.io
+
+
+## Snapshot Testing
+* Snapshot testing involves rendering a component and saving its output as a "snapshot."  
+* Jest stores this snapshot as a .snap file, which acts as a reference for future tests.
+* Any changes in the component's output (like UI updates) will trigger a mismatch with the stored snapshot.  
+
+
+## React Test Renderer
+react-test-renderer is a package that allows you to render React components as JSON objects, which can then be used in snapshot testing with Jest. It's kept separate from React itself, so it needs to be explicitly installed for testing purposes.
+
+### Dependeny
+```bash
+npm install --save-dev react-test-renderer
+
+OR, below one is for react 16
+
+npm install --save-dev react-test-renderer@16.14.0
+```
+
+
+## React Testing Library
+[Docs](https://testing-library.com/docs/react-testing-library/intro/)
+
+### Dependency
+```bash
+npm install --save-dev @testing-library/react
+
+`for react 16`
+npm install --save-dev @testing-library/react@11.2.7
+
+ `and please add the below for better assertions`
+npm install --save-dev @testing-library/jest-dom
+
+```
+### RTL Queries
+![alt text](image-1.png)
+[Doc](https://testing-library.com/docs/react-testing-library/cheatsheet/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 mysql - setup, db,table,simple crud
 Integration - msql -> node.js (endpoint) -> react -> browser
 

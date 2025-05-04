@@ -47,6 +47,8 @@ import CounterDemo from './components/redux-demos/CounterDemo';
 import RTKCounterDemo from './components/redux-demos/rtk/RTKCounterDemo';
 import Button1 from './s/s-test/Button1';
 import SGreeting from './s/s-test/SGreeting';
+import MyButton from './components/testing/MyButton';
+import Greeting from './components/testing/Greeting';
 
 
 function App() {
@@ -194,6 +196,10 @@ function App() {
       {/* <RTKCounterDemo /> */}
 
 
+        {/* Testing */}
+        {/* <MyButton label="Submit Me" /> */}
+
+        {/* <Greeting /> */}
 
 
 
@@ -203,11 +209,11 @@ function App() {
 
       {/* stest */}
       {/* <Button1 label="Submit Me"/> */}
-      <SGreeting />
+      {/* <SGreeting /> */}
 
 
       {/* Redux Lab  */}
-      {/* <ToDoComponent /> */}
+      <ToDoComponent />
 
     </div>
   );
