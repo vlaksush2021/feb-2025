@@ -1,4 +1,4 @@
-# 🖥️ Setup Guide: Check Processor Type and Install MySQL 
+# 🖥️ Setup Guide: Check Processor Type and Install MySQL
 
 ## 🔍 Step 1: Check Your Processor Type
 
